@@ -1,16 +1,13 @@
 <template>
   <div>
     <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container">
         <a href="https://twine.net" class="navbar-brand">
           <img width="100" alt="Vue logo" src="../assets/images/logo.png" />
         </a>
         <form class="d-flex">
-          <action-button label="Apply Now" />
+          <action-button label="Apply Now" url="https://twine.fm" />
         </form>
-      </div>
-      <div class="myclass">
-        Heya
       </div>
     </nav>
   </div>
@@ -26,10 +23,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-  $color: red;
-
-  .myclass {
-    color: $color;
-  }
-</style>
+<style scoped lang="scss"></style>

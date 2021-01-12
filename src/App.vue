@@ -1,14 +1,17 @@
 <template>
-  <Header msg="Welcome"/>
+  <Header />
+  <Main />
 </template>
 
 <script>
 import Header from '@C/Header.vue'
+import Main from '@C/Main.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Main,
   }
 }
 </script>
