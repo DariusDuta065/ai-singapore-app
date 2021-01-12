@@ -2,12 +2,12 @@
   <div class="holder">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6 order-2 order-md-2 imageContainer">
+        <div class="col-xs-12 col-md-6 order-1 order-md-2 imageContainer">
           <div class="mt-1 mb-1 my-0-md">
             <img height="200" width="243" src="@img/checklist.png" alt="" />
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 order-1 order-md-1">
+        <div class="col-xs-12 col-md-6 order-2 order-md-1">
           <h2>Video Specifications</h2>
           <ul>
             <li>
