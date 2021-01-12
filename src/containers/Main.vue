@@ -9,15 +9,13 @@
 </template>
 
 <script>
-import { defineAsyncComponent } from "vue";
-
-const Intro = defineAsyncComponent(() => import("@c/Main/Intro.vue"));
-const LookingFor = defineAsyncComponent(() => import("@c/Main/LookingFor.vue"));
-const AboutProject = defineAsyncComponent(() => import("@c/Main/AboutProject.vue"));
-const VideoContents = defineAsyncComponent(() => import("@c/Main/VideoContents.vue"));
-const VideoSpecifications = defineAsyncComponent(() => import("@c/Main/VideoSpecifications.vue"));
-const NeedPeople = defineAsyncComponent(() => import("@c/Main/NeedPeople.vue"));
-const Payment = defineAsyncComponent(() => import("@c/Main/Payment.vue"));
+import Intro from "@c/Main/Intro";
+import Payment from "@c/Main/Payment.vue";
+import NeedPeople from "@c/Main/NeedPeople";
+import LookingFor from "@c/Main/LookingFor";
+import AboutProject from "@c/Main/AboutProject";
+import VideoContents from "@c/Main/VideoContents";
+import VideoSpecifications from "@c/Main/VideoSpecifications";
 
 export default {
   components: {

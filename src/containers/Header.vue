@@ -10,7 +10,7 @@
             width="100"
             height="29"
             alt="Twine logo"
-            src="@img/logo-sm.png"
+            src="@img/logo.png"
           />
         </a>
         <form class="d-flex">

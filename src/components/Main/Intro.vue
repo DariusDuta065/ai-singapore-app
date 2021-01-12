@@ -16,7 +16,7 @@
           <img
             height="195"
             width="350"
-            src="@img/creative-and-buyer-sm.png"
+            src="@img/creative-and-buyer.png"
             alt=""
           />
         </div>
@@ -26,11 +26,7 @@
 </template>
 
 <script>
-import { defineAsyncComponent } from "vue";
-
-const ActionButton = defineAsyncComponent(() =>
-  import("@c/Header/ActionButton.vue")
-);
+import ActionButton from "@c/Header/ActionButton.vue";
 
 export default {
   components: {
