@@ -1,10 +1,9 @@
 <template>
-  <img width="100" alt="Vue logo" src="./assets/images/logo.png">
   <Header msg="Welcome"/>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './containers/Header.vue'
 
 export default {
   name: 'App',
@@ -21,6 +20,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
 }
 </style>
