@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Header from './containers/Header.vue'
+import Header from '@C/Header.vue'
 
 export default {
   name: 'App',

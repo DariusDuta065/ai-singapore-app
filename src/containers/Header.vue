@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ActionButton from "../components/Header/ActionButton.vue";
+import ActionButton from "@c/Header/ActionButton.vue";
 
 export default {
   components: { ActionButton },
