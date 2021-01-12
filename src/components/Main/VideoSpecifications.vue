@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 order-1 order-md-2 imageContainer">
           <div class="mt-1 mb-1 my-0-md">
-            <img height="200" width="243" src="@img/checklist.png" alt="" />
+            <res-img image="checklist" />
           </div>
         </div>
         <div class="col-xs-12 col-md-6 order-2 order-md-1">
@@ -46,8 +46,11 @@
 </template>
 
 <script>
+import ResImg from "../Common/ResImg.vue";
 export default {
-  components: {},
+  components: {
+    ResImg,
+  },
   name: "VideoSpecifications",
 };
 </script>

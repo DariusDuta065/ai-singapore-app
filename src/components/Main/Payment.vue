@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 order-1 order-md-1 imageContainer">
           <div class="mt-1 mb-1 my-0-md">
-            <img height="172" width="261" src="@img/payment.png" alt="" />
+            <res-img image="checklist" />
           </div>
         </div>
         <div class="col-xs-12 col-md-6 order-2 order-md-2">
@@ -28,9 +28,9 @@
               href="https://docs.google.com/document/d/1qdJgstuggElKxfTU-AUGM5yaNkliHm9p1t1hcAJDfg8"
               target="_blank"
               rel="noopener noreferrer"
-              >this</a
+              >this document</a
             >
-            document. Please ensure you have read this in full.
+            . Please ensure you have read this in full.
           </p>
 
           <p>
@@ -51,7 +51,7 @@
               href="https://help.twine.fm/en/articles/3967747-payment-methods-transaction-fees"
               target="_blank"
               rel="noopener noreferrer"
-              >here</a
+              >this help centre article</a
             >.
           </p>
         </div>
@@ -61,8 +61,11 @@
 </template>
 
 <script>
+import ResImg from "@c/Common/ResImg.vue";
 export default {
-  components: {},
+  components: {
+    ResImg,
+  },
   name: "Payment",
 };
 </script>
