@@ -9,6 +9,9 @@
           <action-button label="Apply Now" />
         </form>
       </div>
+      <div class="myclass">
+        Heya
+      </div>
     </nav>
   </div>
 </template>
@@ -23,4 +26,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+  $color: red;
+
+  .myclass {
+    color: $color;
+  }
+</style>
