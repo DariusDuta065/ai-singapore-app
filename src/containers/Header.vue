@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <nav class="navbar navbar-light bg-light">
+  <div id="header">
+    <nav class="navbar sticky-top navbar-light bg-light">
       <div class="container">
         <a href="https://twine.net" class="navbar-brand">
           <img width="100" alt="Vue logo" src="../assets/images/logo.png" />
@@ -23,4 +23,8 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+#header {
+  padding: 30px 0;
+}
+</style>

@@ -1,13 +1,12 @@
 <template>
-  <div class="container">
-    <h1>Testing the font</h1>
-  </div>
+  <intro />
 </template>
 
 <script>
+import Intro from "../components/Main/Intro.vue";
+
 export default {
+  components: { Intro },
   name: "Main",
 };
 </script>
-
-<style></style>
