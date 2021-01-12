@@ -1,9 +1,17 @@
 <template>
   <div id="header">
-    <nav class="navbar sticky-top navbar-light bg-light">
+    <nav
+      class="fixed-top navbar navbar-light"
+      v-bind:class="{ active: headerScrolled, inactive: !headerScrolled }"
+    >
       <div class="container">
         <a href="https://twine.net" class="navbar-brand">
-          <img width="100" height="30" alt="Twine logo" src="../assets/images/logo.png" />
+          <img
+            width="100"
+            height="30"
+            alt="Twine logo"
+            src="@img/logo-sm.png"
+          />
         </a>
         <form class="d-flex">
           <action-button label="Apply Now" url="https://twine.fm" />
@@ -20,11 +28,36 @@ export default {
   components: { ActionButton },
   name: "Header",
   props: {},
+  data() {
+    return {
+      headerScrolled: false,
+    };
+  },
+  methods: {
+    handleScroll() {
+      this.headerScrolled = window.scrollY > 50;
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
 };
 </script>
 
 <style scoped lang="scss">
 #header {
   padding: 30px 0;
+  transition: 0.25s;
+}
+.inactive {
+  transition: 0.25s;
+}
+.active {
+  padding: 15px;
+  background: white;
+  transition: 0.25s;
 }
 </style>
