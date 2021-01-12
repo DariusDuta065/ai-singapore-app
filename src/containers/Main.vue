@@ -1,12 +1,19 @@
 <template>
   <intro />
+  <looking-for />
 </template>
 
 <script>
-import Intro from "../components/Main/Intro.vue";
+import { defineAsyncComponent } from "vue";
+
+const Intro = defineAsyncComponent(() => import("@c/Main/Intro.vue"));
+const LookingFor = defineAsyncComponent(() => import("@c/Main/LookingFor.vue"));
 
 export default {
-  components: { Intro },
+  components: {
+    Intro,
+    LookingFor,
+  },
   name: "Main",
 };
 </script>

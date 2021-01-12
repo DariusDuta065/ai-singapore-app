@@ -12,17 +12,26 @@
         <action-button label="Apply Now" url="https://twine.fm" />
       </div>
       <div class="col-md-6 second">
-        <img height="195" width="350" src="@img/creative-and-buyer.png" alt="" />
+        <img
+          height="195"
+          width="350"
+          src="@img/creative-and-buyer.png"
+          alt=""
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ActionButton from "@c/Header/ActionButton.vue";
+import { defineAsyncComponent } from "vue";
+
+const ActionButton = defineAsyncComponent(() => import("@c/Header/ActionButton.vue"));
 
 export default {
-  components: { ActionButton },
+  components: {
+    ActionButton,
+  },
   name: "Intro",
 };
 </script>
