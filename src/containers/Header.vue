@@ -3,7 +3,7 @@
     <nav class="navbar sticky-top navbar-light bg-light">
       <div class="container">
         <a href="https://twine.net" class="navbar-brand">
-          <img width="100" alt="Vue logo" src="../assets/images/logo.png" />
+          <img width="100" height="30" alt="Twine logo" src="../assets/images/logo.png" />
         </a>
         <form class="d-flex">
           <action-button label="Apply Now" url="https://twine.fm" />
