@@ -2,8 +2,6 @@
   <intro />
   <looking-for />
   <about-project />
-  <looking-for />
-  <intro />
 </template>
 
 <script>

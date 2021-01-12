@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6 order-1 order-md-1 imageContainer">
-          <div class="imageContainer mt-1 mb-4 my-0-md">
+          <div class="mt-1 mb-1 my-0-md">
             <img
               height="245"
               width="353"
@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-md-6 order-2 order-md-2">
-          <h1>What are we looking for?</h1>
+          <h2>What are we looking for?</h2>
           <p>
             <b>We require actors to film</b> 5 short videos of themselves
             talking about a chosen topic.

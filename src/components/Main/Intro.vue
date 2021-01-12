@@ -11,8 +11,8 @@
         </p>
         <action-button label="Apply Now" url="https://twine.fm" />
       </div>
-      <div class="col-xs-12 col-md-6 order-1 order-md-2">
-        <div class="imageContainer mt-1 mb-4 my-0-md">
+      <div class="col-xs-12 col-md-6 order-1 order-md-2 imageContainer">
+        <div class="mt-1 mb-1 my-0-md">
           <img
             height="195"
             width="350"

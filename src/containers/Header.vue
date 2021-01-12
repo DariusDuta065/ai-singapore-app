@@ -8,7 +8,7 @@
         <a href="https://twine.net" class="navbar-brand">
           <img
             width="100"
-            height="30"
+            height="29"
             alt="Twine logo"
             src="@img/logo-sm.png"
           />
