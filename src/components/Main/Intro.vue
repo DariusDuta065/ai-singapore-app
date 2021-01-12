@@ -1,7 +1,7 @@
 <template>
   <div class="container holder">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-xs-12 col-md-6 order-2 order-md-1">
         <h1>AI Singapore Video Dataset Project</h1>
         <p class="lead">Video collection for machine learning</p>
         <p>
@@ -11,13 +11,15 @@
         </p>
         <action-button label="Apply Now" url="https://twine.fm" />
       </div>
-      <div class="col-md-6 second">
-        <img
-          height="195"
-          width="350"
-          src="@img/creative-and-buyer.png"
-          alt=""
-        />
+      <div class="col-xs-12 col-md-6 order-1 order-md-2">
+        <div class="imageContainer mt-1 mb-4 my-0-md">
+          <img
+            height="195"
+            width="350"
+            src="@img/creative-and-buyer-sm.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -26,7 +28,9 @@
 <script>
 import { defineAsyncComponent } from "vue";
 
-const ActionButton = defineAsyncComponent(() => import("@c/Header/ActionButton.vue"));
+const ActionButton = defineAsyncComponent(() =>
+  import("@c/Header/ActionButton.vue")
+);
 
 export default {
   components: {
@@ -41,8 +45,7 @@ export default {
   margin: 30px auto;
 }
 
-.second {
-  padding: 30px auto;
+.imageContainer {
   display: flex;
   align-items: center;
   justify-content: center;

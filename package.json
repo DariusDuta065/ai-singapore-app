@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "serve-express": "node server.js",
     "lint": "vue-cli-service lint",
-    "purge-css": "purgecss --css dist/css/index.700ce885.css --content dist/index.html dist/**/*.js --output dist/css/"
+    "purge-css": "purgecss --css dist/css/*.css --content dist/index.html dist/**/*.js --output dist/css/"
   },
   "dependencies": {
     "@popperjs/core": "^2.6.0",

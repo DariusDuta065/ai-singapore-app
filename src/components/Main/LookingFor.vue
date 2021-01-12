@@ -2,15 +2,17 @@
   <div class="bg-white holder">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 second">
-          <img
-            height="255"
-            width="368"
-            src="@img/creative-equipment-2.png"
-            alt=""
-          />
+        <div class="col-xs-12 col-md-6 order-1 order-md-1 imageContainer">
+          <div class="imageContainer mt-1 mb-4 my-0-md">
+            <img
+              height="245"
+              width="353"
+              src="@img/creative-equipment-2-sm.png"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-xs-12 col-md-6 order-2 order-md-2">
           <h1>What are we looking for?</h1>
           <p>
             <b>We require actors to film</b> 5 short videos of themselves
@@ -60,9 +62,7 @@ export default {
 .holder {
   padding: 50px 0;
 }
-
-.second {
-  padding: 30px auto;
+.imageContainer {
   display: flex;
   align-items: center;
   justify-content: center;

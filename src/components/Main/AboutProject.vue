@@ -1,6 +1,6 @@
 <template>
-  <div class="row holder">
-    <div class="offset-md-3 col-md-6 container">
+  <div class="container holder">
+    <div class="offset-md-3 col-md-6">
       <h1>About the project</h1>
       <p>
         AI Singapore (AISG) is a national AI programme launched by the National
