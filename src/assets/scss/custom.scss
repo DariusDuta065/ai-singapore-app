@@ -10,6 +10,10 @@ h1, h2, h3 {
   text-align: initial;
 }
 
-p {
+p, ul > li {
   color: $text-color;
+}
+
+ul > li {
+  list-style-type: circle;
 }
