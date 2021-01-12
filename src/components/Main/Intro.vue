@@ -13,12 +13,7 @@
       </div>
       <div class="col-xs-12 col-md-6 order-1 order-md-2 imageContainer">
         <div class="mt-1 mb-1 my-0-md">
-          <img
-            height="195"
-            width="350"
-            src="@img/creative-and-buyer.png"
-            alt=""
-          />
+          <res-img image="creative-and-buyer" />
         </div>
       </div>
     </div>
@@ -27,10 +22,12 @@
 
 <script>
 import ActionButton from "@c/Header/ActionButton.vue";
+import ResImg from '@c/Common/ResImg.vue';
 
 export default {
   components: {
     ActionButton,
+    ResImg,
   },
   name: "Intro",
 };

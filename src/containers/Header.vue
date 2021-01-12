@@ -6,12 +6,7 @@
     >
       <div class="container">
         <a href="https://twine.net" class="navbar-brand">
-          <img
-            width="100"
-            height="29"
-            alt="Twine logo"
-            src="@img/logo.png"
-          />
+          <res-img image="logo" />
         </a>
         <form class="d-flex">
           <action-button label="Apply Now" url="https://twine.fm" />
@@ -23,9 +18,13 @@
 
 <script>
 import ActionButton from "@c/Header/ActionButton.vue";
+import ResImg from "@c/Common/ResImg.vue";
 
 export default {
-  components: { ActionButton },
+  components: {
+    ActionButton,
+    ResImg,
+  },
   name: "Header",
   props: {},
   data() {

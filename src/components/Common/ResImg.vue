@@ -33,11 +33,41 @@ export default {
   data() {
     return {
       images: {
+        logo: {
+          exts: ["webp", "png"],
+          alt: "Twine Logo",
+          sizes: "(max-width: 1200px) 100px, 100px",
+          srcSet: [111, 278, 556, 834, 1112],
+        },
         checklist: {
           exts: ["webp", "png"],
           alt: "Checklist",
           sizes: "(max-width: 1200px) 200px, 300px",
           srcSet: [50, 249, 302, 386, 788],
+        },
+        payment: {
+          exts: ["webp", "png"],
+          alt: "Payment",
+          sizes: "(max-width: 1200px) 200px, 300px",
+          srcSet: [78, 196, 392, 588, 784],
+        },
+        "creative-and-buyer": {
+          exts: ["webp", "png"],
+          alt: "Creative and buyer",
+          sizes: "(max-width: 1200px) 200px, 300px",
+          srcSet: [85, 214, 427, 854],
+        },
+        "creative-equipment": {
+          exts: ["webp", "png"],
+          alt: "Creative equipment",
+          sizes: "(max-width: 1200px) 350px, 400px",
+          srcSet: [74, 184, 368, 552, 736],
+        },
+        "video-play": {
+          exts: ["webp", "png"],
+          alt: "Video specifications",
+          sizes: "(max-width: 1200px) 350px, 350px",
+          srcSet: [35, 88, 175, 263, 350],
         },
       },
     };
