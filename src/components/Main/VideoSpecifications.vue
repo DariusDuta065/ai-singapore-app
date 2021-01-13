@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 order-1 order-md-2 imageContainer">
           <div class="mt-1 mb-1 my-0-md">
-            <res-img image="checklist" />
+            <res-img image="checklist" width="249" height="204" />
           </div>
         </div>
         <div class="col-xs-12 col-md-6 order-2 order-md-1">

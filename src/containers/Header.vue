@@ -6,7 +6,7 @@
     >
       <div class="container">
         <a href="https://twine.net" class="navbar-brand">
-          <res-img image="logo" />
+          <res-img height="32" width="111" image="logo" />
         </a>
         <form class="d-flex">
           <action-button label="Apply Now" url="https://twine.fm" />

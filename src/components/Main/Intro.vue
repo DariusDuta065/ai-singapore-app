@@ -13,7 +13,7 @@
       </div>
       <div class="col-xs-12 col-md-6 order-1 order-md-2 imageContainer">
         <div class="mt-1 mb-1 my-0-md">
-          <res-img image="creative-and-buyer" />
+          <res-img image="creative-and-buyer" width="214" height="119" />
         </div>
       </div>
     </div>

@@ -2,18 +2,14 @@
   <picture>
     <source
       v-if="getExts().includes('webp')"
-      :src="getSrc('webp')"
       :alt="getAlt()"
       :sizes="getSize()"
       :srcset="getSrcSet('webp')"
     />
-    <source
-      :src="getSrc()"
-      :alt="getAlt()"
-      :sizes="getSize()"
-      :srcset="getSrcSet()"
-    />
+    <source :alt="getAlt()" :sizes="getSize()" :srcset="getSrcSet()" />
     <img
+      :width="this.width"
+      :height="this.height"
       :src="getSrc()"
       :alt="getAlt()"
       :sizes="getSize()"
@@ -29,6 +25,12 @@ export default {
     image: {
       type: String,
     },
+    width: {
+      type: Number,
+    },
+    height: {
+      type: Number,
+    },
   },
   data() {
     return {
@@ -36,37 +38,37 @@ export default {
         logo: {
           exts: ["webp", "png"],
           alt: "Twine Logo",
-          sizes: "(max-width: 1200px) 100px, 100px",
+          sizes: "(max-width: 1200px) 111px, 111px",
           srcSet: [111, 278, 556, 834, 1112],
         },
         checklist: {
           exts: ["webp", "png"],
           alt: "Checklist",
-          sizes: "(max-width: 1200px) 200px, 300px",
+          sizes: "(max-width: 1200px) 249px, 302px",
           srcSet: [50, 249, 302, 386, 788],
         },
         payment: {
           exts: ["webp", "png"],
           alt: "Payment",
-          sizes: "(max-width: 1200px) 200px, 300px",
+          sizes: "(max-width: 1200px) 196px, 196px",
           srcSet: [78, 196, 392, 588, 784],
         },
         "creative-and-buyer": {
           exts: ["webp", "png"],
           alt: "Creative and buyer",
-          sizes: "(max-width: 1200px) 200px, 300px",
+          sizes: "(max-width: 1200px) 214px, 214px",
           srcSet: [85, 214, 427, 854],
         },
         "creative-equipment": {
           exts: ["webp", "png"],
           alt: "Creative equipment",
-          sizes: "(max-width: 1200px) 350px, 400px",
+          sizes: "(max-width: 1200px) 184px, 184px",
           srcSet: [74, 184, 368, 552, 736],
         },
         "video-play": {
           exts: ["webp", "png"],
           alt: "Video specifications",
-          sizes: "(max-width: 1200px) 350px, 350px",
+          sizes: "(max-width: 1200px) 263px, 263px",
           srcSet: [35, 88, 175, 263, 350],
         },
       },
