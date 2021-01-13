@@ -6,6 +6,7 @@
   <video-specifications />
   <need-people />
   <payment />
+  <frequent-questions />
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import NeedPeople from "@c/Main/NeedPeople";
 import LookingFor from "@c/Main/LookingFor";
 import AboutProject from "@c/Main/AboutProject";
 import VideoContents from "@c/Main/VideoContents";
+import FrequentQuestions from "@c/Main/FrequentQuestions";
 import VideoSpecifications from "@c/Main/VideoSpecifications";
 
 export default {
@@ -26,6 +28,7 @@ export default {
     VideoSpecifications,
     NeedPeople,
     Payment,
+    FrequentQuestions,
   },
   name: "Main",
 };
