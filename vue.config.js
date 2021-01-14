@@ -16,6 +16,7 @@ module.exports = {
         "@c": path.resolve(__dirname, "src/components"),
         "@C": path.resolve(__dirname, "src/containers"),
         "@img": path.resolve(__dirname, "src/assets/images"),
+        "@constants": path.resolve(__dirname, "src/constants"),
       },
     },
   },
