@@ -56,7 +56,7 @@ export default {
         "creative-and-buyer": {
           exts: ["webp", "png"],
           alt: "Creative and buyer",
-          sizes: "(max-width: 768px) 35vw, 427px",
+          sizes: "(max-width: 768px) 100vw, 427px",
           srcSet: [85, 214, 427, 854],
         },
         "creative-equipment": {
