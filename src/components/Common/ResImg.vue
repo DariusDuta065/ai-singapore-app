@@ -38,7 +38,7 @@ export default {
         logo: {
           exts: ["webp", "png"],
           alt: "Twine Logo",
-          sizes: "(max-width: 1200px) 111px, 111px",
+          sizes: "(max-width: 1200px) 278px, 556px",
           srcSet: [111, 278, 556, 834, 1112],
         },
         checklist: {
@@ -56,7 +56,7 @@ export default {
         "creative-and-buyer": {
           exts: ["webp", "png"],
           alt: "Creative and buyer",
-          sizes: "(max-width: 1200px) 214px, 214px",
+          sizes: "(max-width: 1200px) 427px, 427px",
           srcSet: [85, 214, 427, 854],
         },
         "creative-equipment": {

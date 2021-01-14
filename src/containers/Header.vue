@@ -50,6 +50,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 #header {
   padding: 30px 0;
   transition: 0.25s;
@@ -61,5 +62,6 @@ export default {
   padding: 15px;
   background: white;
   transition: 0.25s;
+  box-shadow: 1px 1px 2px rgba(#322954, 0.2);
 }
 </style>

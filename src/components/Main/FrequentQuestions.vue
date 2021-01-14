@@ -83,7 +83,7 @@ export default {
           answer: `
             <p>This project is run through Twine and to be able to pitch on the job you must have 
             an account. Payment will also be made via your Twine account.</p>
-            <p>Please <a href="http://twine.net/signup" target="_blank" rel="noopener noreferrer">sign up 
+            <p>Please <a href="https://twine.net/signup" target="_blank" rel="noopener noreferrer">sign up 
             here</a>.</p>
           `,
         },

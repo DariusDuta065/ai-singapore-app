@@ -6,8 +6,8 @@
           <div class="mt-1 mb-1 my-0-md">
             <res-img
               image="creatives-background-pattern"
-              :width="313"
-              :height="213"
+              :width="294"
+              :height="200"
             />
           </div>
         </div>

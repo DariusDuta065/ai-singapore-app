@@ -25,7 +25,7 @@
             Approval is based on whether your videos have met the requirements
             stated within
             <a
-              href="https://docs.google.com/document/d/1qdJgstuggElKxfTU-AUGM5yaNkliHm9p1t1hcAJDfg8"
+              :href="Links.ACTORS_INSTRUCTIONS"
               target="_blank"
               rel="noopener noreferrer"
               >this document</a
@@ -38,7 +38,7 @@
             method’ within your Twine settings.
             <strong>
               Please make sure you have selected an
-              <a href="https://www.twine.fm/settings">option here</a> - if not,
+              <a :href="Links.SETTINGS_PAGE">option here</a> - if not,
               you won’t be paid.
             </strong>
           </p>
@@ -48,7 +48,7 @@
             for this project. To find out more about our payment methods and
             associated fees please visit
             <a
-              href="https://help.twine.fm/en/articles/3967747-payment-methods-transaction-fees"
+              :href="Links.PAYMENT_METHODS_HELP"
               target="_blank"
               rel="noopener noreferrer"
               >this help centre article</a
@@ -62,11 +62,19 @@
 
 <script>
 import ResImg from "@c/Common/ResImg.vue";
+
+import Links from "@constants/Links.js";
+
 export default {
   components: {
     ResImg,
   },
   name: "Payment",
+  data: function () {
+    return {
+      Links,
+    };
+  },
 };
 </script>
 
