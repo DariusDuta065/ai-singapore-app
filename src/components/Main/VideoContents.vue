@@ -21,7 +21,7 @@
           <div class="d-flex flex-row-reverse">
             <action-button
               label="Questions &amp; Topics"
-              :url="Links.QUESTIONS_TOPICS"
+              :url="`${publicPath}${Links.QUESTIONS_TOPICS}`"
             />
           </div>
         </div>
@@ -45,6 +45,7 @@ export default {
   data: function () {
     return {
       Links,
+      publicPath: process.env.BASE_URL,
     };
   },
 };

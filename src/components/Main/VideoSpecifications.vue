@@ -54,7 +54,7 @@
           <p>
             Please visit
             <a
-              :href="Links.ACTORS_INSTRUCTIONS"
+              :href="`${publicPath}${Links.ACTORS_INSTRUCTIONS}`"
               target="_blank"
               rel="noopener noreferrer"
               >this document</a
@@ -63,7 +63,7 @@
           </p>
           <action-button
             label="Instructions for Actors"
-            :url="Links.ACTORS_INSTRUCTIONS"
+            :url="`${publicPath}${Links.ACTORS_INSTRUCTIONS}`"
           />
         </div>
       </div>
@@ -86,6 +86,7 @@ export default {
   data: function ActionButton() {
     return {
       Links,
+      publicPath: process.env.BASE_URL,
     };
   },
 };

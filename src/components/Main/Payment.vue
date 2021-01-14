@@ -25,7 +25,7 @@
             Approval is based on whether your videos have met the requirements
             stated within
             <a
-              :href="Links.ACTORS_INSTRUCTIONS"
+              :href="`${publicPath}${Links.ACTORS_INSTRUCTIONS}`"
               target="_blank"
               rel="noopener noreferrer"
               >this document</a
@@ -73,6 +73,7 @@ export default {
   data: function () {
     return {
       Links,
+      publicPath: process.env.BASE_URL,
     };
   },
 };

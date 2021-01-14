@@ -15,6 +15,8 @@ app.use(
   })
 );
 
+app.use("/ai-dataset-video", staticFileMiddleware);
+
 // call for redirected requests
 app.use(staticFileMiddleware);
 

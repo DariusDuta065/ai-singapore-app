@@ -4,6 +4,32 @@ $body-bg: #f9f9f9;
 $primary: #322954;
 $text-color: #312855;
 
+
+// Set max-width for each container breakpoint.
+$container-max-width-factor: .8; // set to 1 to use default values
+$container-max-widths: (
+  sm: 540px,
+  md: 850px,
+  lg: 900px,
+  xl: 970px,
+  xxl: 1320px,
+) !default;
+
+@each $key, $value in $container-max-widths {
+  $map: ();
+  $map: map-merge($map, ($key: $value * $container-max-width-factor) );
+  $container-max-widths: map-merge($container-max-widths, $map)
+}
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// ) !default;
+
 // $theme-colors: (
 //   "primary":    $primary,
 //   "secondary":  $secondary,

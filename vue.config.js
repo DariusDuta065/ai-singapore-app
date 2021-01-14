@@ -1,12 +1,14 @@
 const path = require("path");
 
 module.exports = {
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/ai-dataset-video/" : "/",
   pages: {
     index: {
       entry: "src/main.js",
       template: "public/index.html",
       filename: "index.html",
-      title: "Singapore AI",
+      title: "AI Singapore",
     },
   },
   configureWebpack: {

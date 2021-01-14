@@ -8,7 +8,9 @@
     "serve-express": "node server.js",
     "lint": "vue-cli-service lint",
     "purge-css": "purgecss --css dist/css/*.css --content dist/index.html dist/**/*.js --output dist/css/",
-    "build-report": "vue-cli-service build --report"
+    "build-report": "vue-cli-service build --report",
+    "deploy-to-s3": "aws s3 cp ./dist/ s3://twine-static-html-staging/ai-dataset-video/ --recursive --acl public-read --cache-control max-age=31536000 --profile staging",
+    "invalidate-cloudfront": "aws cloudfront create-invalidation --distribution-id E2WIP8E2AKW6VQ --paths '/ai-dataset-video*' --profile staging"
   },
   "dependencies": {
     "@popperjs/core": "^2.6.0",

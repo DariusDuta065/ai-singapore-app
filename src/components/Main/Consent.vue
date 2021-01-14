@@ -21,7 +21,7 @@
           <p>
             For further details on consent please visit
             <a
-              :href="Links.ACTORS_INSTRUCTIONS"
+              :href="`${publicPath}${Links.ACTORS_INSTRUCTIONS}`"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -42,6 +42,7 @@ export default {
   data: function () {
     return {
       Links,
+      publicPath: process.env.BASE_URL,
     };
   },
 };
