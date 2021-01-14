@@ -6,8 +6,20 @@
           {{ title }}
         </div>
         <div class="accordion-header-caret ms-auto">
-          <img v-if="isOpen" :src="caretUpIcon" :width="16" :height="16" />
-          <img v-if="!isOpen" :src="caretDownIcon" :width="16" :height="16" />
+          <img
+            v-if="isOpen"
+            :src="caretUpIcon"
+            :width="16"
+            :height="16"
+            alt="Close accordion"
+          />
+          <img
+            v-if="!isOpen"
+            :src="caretDownIcon"
+            :width="16"
+            :height="16"
+            alt="Open accordion"
+          />
         </div>
       </div>
       <height-transition>

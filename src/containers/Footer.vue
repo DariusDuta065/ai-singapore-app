@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="container">
-      <div class="text-muted">© Clowdy Ltd. t/a Twine</div>
+      <div class="text-light">© Clowdy Ltd. t/a Twine</div>
     </div>
     <intercom />
   </div>
