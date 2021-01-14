@@ -4,26 +4,24 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 order-1 order-md-1 imageContainer">
           <div class="mt-1 mb-1 my-0-md">
-            <res-img image="video-play" :width="263" :height="263" />
+            <res-img image="creative-equipment" :width="368" :height="256" />
           </div>
         </div>
         <div class="col-xs-12 col-md-6 order-2 order-md-2">
           <h2>What is the content of the videos?</h2>
-          <ul>
-            <li>
-              You are required to film 5 videos, at a minimum of 45 seconds long
-              per video.
-            </li>
-            <li>
-              Within the videos you are required to be speaking about a topic.
-              There is a list of questions/topics provided that you can choose
-              from or you can create your own.
-            </li>
-          </ul>
+          <p>
+            You are required to film 5 videos, at a minimum of 45 seconds long
+            per video.
+          </p>
+          <p>
+            Within the videos you are required to be speaking about a topic.
+            There is a list of questions/topics provided that you can choose
+            from or you can create your own.
+          </p>
           <div class="d-flex flex-row-reverse">
             <action-button
               label="Questions &amp; Topics"
-              url="https://docs.google.com/document/d/14Y5g-bnktfV8tEk-WqLmH7ZobdM3FEhdjJfnO2_cOsU"
+              :url="Links.QUESTIONS_TOPICS"
             />
           </div>
         </div>
@@ -34,7 +32,9 @@
 
 <script>
 import ActionButton from "@c/Header/ActionButton.vue";
-import ResImg from '@c/Common/ResImg.vue';
+import ResImg from "@c/Common/ResImg.vue";
+
+import Links from "@constants/Links.js";
 
 export default {
   components: {
@@ -42,6 +42,11 @@ export default {
     ResImg,
   },
   name: "VideoContents",
+  data: function () {
+    return {
+      Links,
+    };
+  },
 };
 </script>
 

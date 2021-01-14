@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white holder">
+  <div class="holder">
     <div class="container">
       <h2 class="text-center">FAQ's</h2>
 
@@ -13,7 +13,7 @@
       </div>
 
       <div class="text-center mt-4">
-        <action-button label="Apply Now" url="https://twine.net" />
+        <action-button label="Apply Now" :url="Links.JOB_LINK" />
       </div>
     </div>
   </div>
@@ -23,6 +23,8 @@
 import ActionButton from "@c/Header/ActionButton";
 import Accordion from "@c/Common/Accordion.vue";
 
+import Links from "@constants/Links.js";
+
 export default {
   name: "FrequentQuestions",
   components: {
@@ -31,6 +33,7 @@ export default {
   },
   data: function () {
     return {
+      Links,
       accordionItems: [
         {
           title: `Can I submit more than 5 videos?`,
@@ -62,9 +65,8 @@ export default {
           title: `Why was my pitch rejected?`,
           answer: `
             <p>We are looking for people of specific demographics to take part in this project. If 
-            you are rejected we may have already fulfilled this demographic. Additionally you need 
-            to ensure your pitch is of quality and provides details on your suitability for this 
-            work. Unfortunately once rejected you are not able to pitch again on this project.</p>
+            you are rejected we may have already fulfilled this demographic. You are welcome to ask for feedback.</p>
+            <p>Additionally you need to ensure your pitch is of quality and provides details on your suitability for this work. Please note the instructions on the job brief.</p>
           `,
         },
         {
@@ -92,8 +94,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import "src/assets/scss/variables.scss";
-
 .holder {
   padding: 20px 0 50px 0;
 }

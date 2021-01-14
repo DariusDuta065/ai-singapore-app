@@ -44,13 +44,13 @@ export default {
         checklist: {
           exts: ["webp", "png"],
           alt: "Checklist",
-          sizes: "(max-width: 1200px) 249px, 302px",
+          sizes: "(max-width: 1200px) 302px, 386px",
           srcSet: [50, 249, 302, 386, 788],
         },
         payment: {
           exts: ["webp", "png"],
           alt: "Payment",
-          sizes: "(max-width: 1200px) 196px, 196px",
+          sizes: "(max-width: 1200px) 392px, 588px",
           srcSet: [78, 196, 392, 588, 784],
         },
         "creative-and-buyer": {
@@ -62,7 +62,7 @@ export default {
         "creative-equipment": {
           exts: ["webp", "png"],
           alt: "Creative equipment",
-          sizes: "(max-width: 1200px) 184px, 184px",
+          sizes: "(max-width: 1200px) 368px, 552px",
           srcSet: [74, 184, 368, 552, 736],
         },
         "video-play": {
@@ -70,6 +70,12 @@ export default {
           alt: "Video specifications",
           sizes: "(max-width: 1200px) 263px, 263px",
           srcSet: [35, 88, 175, 263, 350],
+        },
+        "creatives-background-pattern": {
+          exts: ["webp", "png"],
+          alt: "Creatives Pattern",
+          sizes: "(max-width: 1200px) 313px, 469px",
+          srcSet: [313, 469, 625],
         },
       },
     };

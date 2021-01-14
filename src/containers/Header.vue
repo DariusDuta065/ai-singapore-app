@@ -9,7 +9,7 @@
           <res-img :height="32" :width="111" image="logo" />
         </a>
         <form class="d-flex">
-          <action-button label="Apply Now" url="https://twine.fm" />
+          <action-button label="Apply Now" :url="Links.JOB_LINK" />
         </form>
       </div>
     </nav>
@@ -20,6 +20,8 @@
 import ActionButton from "@c/Header/ActionButton.vue";
 import ResImg from "@c/Common/ResImg.vue";
 
+import Links from "@constants/Links.js";
+
 export default {
   components: {
     ActionButton,
@@ -29,6 +31,7 @@ export default {
   props: {},
   data() {
     return {
+      Links,
       headerScrolled: false,
     };
   },

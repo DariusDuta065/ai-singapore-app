@@ -5,11 +5,11 @@
         <h1>AI Singapore Video Dataset Project</h1>
         <p class="lead">Video collection for machine learning</p>
         <p>
-          Welcome to the AI Singapore video dataset project. This project is to
-          contribute to a public dataset to train machine learning models to
-          recognise specific activities.
+          Welcome to the AI Singapore video dataset project. Videos from this
+          project will contribute to the training and testing of machine
+          learning models to detect fake video and audio content.
         </p>
-        <action-button label="Apply Now" url="https://twine.fm" />
+        <action-button label="Apply Now" :url="Links.JOB_LINK" />
       </div>
       <div class="col-xs-12 col-md-6 order-1 order-md-2 imageContainer">
         <div class="mt-1 mb-1 my-0-md">
@@ -22,7 +22,9 @@
 
 <script>
 import ActionButton from "@c/Header/ActionButton.vue";
-import ResImg from '@c/Common/ResImg.vue';
+import ResImg from "@c/Common/ResImg.vue";
+
+import Links from "@constants/Links.js";
 
 export default {
   components: {
@@ -30,6 +32,11 @@ export default {
     ResImg,
   },
   name: "Intro",
+  data: function () {
+    return {
+      Links,
+    };
+  },
 };
 </script>
 

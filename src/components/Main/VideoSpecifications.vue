@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 order-1 order-md-2 imageContainer">
           <div class="mt-1 mb-1 my-0-md">
-            <res-img image="checklist" :width="249" :height="204" />
+            <res-img image="checklist" :width="302" :height="248" />
           </div>
         </div>
         <div class="col-xs-12 col-md-6 order-2 order-md-1">
@@ -39,6 +39,32 @@
               44.1kHz.
             </li>
           </ul>
+          <p>
+            We would recommend that you download
+            <a
+              :href="Links.ADOBE_RUSH"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Adobe Premiere Rush
+            </a>
+            on your smartphone and use it to record the videos with audio and
+            export to mp4.
+          </p>
+          <p>
+            Please visit
+            <a
+              :href="Links.ACTORS_INSTRUCTIONS"
+              target="_blank"
+              rel="noopener noreferrer"
+              >this document</a
+            >
+            for more information on the exact specifications.
+          </p>
+          <action-button
+            label="Instructions for Actors"
+            :url="Links.ACTORS_INSTRUCTIONS"
+          />
         </div>
       </div>
     </div>
@@ -46,12 +72,22 @@
 </template>
 
 <script>
-import ResImg from "../Common/ResImg.vue";
+import ResImg from "@c/Common/ResImg.vue";
+import ActionButton from "@c/Header/ActionButton.vue";
+
+import Links from "@constants/Links.js";
+
 export default {
+  name: "VideoSpecifications",
   components: {
     ResImg,
+    ActionButton,
   },
-  name: "VideoSpecifications",
+  data: function ActionButton() {
+    return {
+      Links,
+    };
+  },
 };
 </script>
 

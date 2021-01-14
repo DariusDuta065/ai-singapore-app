@@ -4,7 +4,11 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 order-1 order-md-1 imageContainer">
           <div class="mt-1 mb-1 my-0-md">
-            <res-img image="creative-equipment" :width="184" :height="128" />
+            <res-img
+              image="creatives-background-pattern"
+              :width="313"
+              :height="213"
+            />
           </div>
         </div>
         <div class="col-xs-12 col-md-6 order-2 order-md-2">
@@ -30,7 +34,7 @@
             </em>
           </p>
           <div class="d-flex flex-row-reverse">
-            <action-button label="Sign Up To Twine" url="https://twine.fm" />
+            <action-button label="Sign Up To Twine" :url="Links.SIGN_UP" />
           </div>
         </div>
       </div>
@@ -42,12 +46,19 @@
 import ActionButton from "@c/Header/ActionButton.vue";
 import ResImg from "@c/Common/ResImg.vue";
 
+import Links from "@constants/Links.js";
+
 export default {
   components: {
     ActionButton,
     ResImg,
   },
   name: "LookingFor",
+  data: function () {
+    return {
+      Links,
+    };
+  },
 };
 </script>
 
