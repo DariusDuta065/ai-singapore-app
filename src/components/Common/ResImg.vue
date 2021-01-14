@@ -38,7 +38,7 @@ export default {
         logo: {
           exts: ["webp", "png"],
           alt: "Twine Logo",
-          sizes: "(max-width: 1200px) 278px, 556px",
+          sizes: "(max-width: 1200px) 111px, 278px",
           srcSet: [111, 278, 556, 834, 1112],
         },
         checklist: {
