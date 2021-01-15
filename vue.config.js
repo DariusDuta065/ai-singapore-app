@@ -38,7 +38,7 @@ module.exports = {
         ],
         extractors: [
           {
-            extractor: (content) => content.match(/[A-z0-9-_:\/]+/g) || [],
+            extractor: (content) => content.match(/[A-z0-9-_:/]+/g) || [],
             extensions: ["html", "vue", "js"],
           },
         ],
