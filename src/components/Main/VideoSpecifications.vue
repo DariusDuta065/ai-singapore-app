@@ -52,14 +52,8 @@
             export to mp4.
           </p>
           <p>
-            Please visit
-            <a
-              :href="`${publicPath}${Links.ACTORS_INSTRUCTIONS}`"
-              target="_blank"
-              rel="noopener noreferrer"
-              >this document</a
-            >
-            for more information on the exact specifications.
+            Please visit Instructions for Actors for more information on the
+            exact specifications:
           </p>
           <action-button
             label="Instructions for Actors"
