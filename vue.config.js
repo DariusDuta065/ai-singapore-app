@@ -1,4 +1,6 @@
 const path = require("path");
+const glob = require("glob-all");
+const PurgecssPlugin = require("purgecss-webpack-plugin");
 
 module.exports = {
   publicPath:
@@ -21,5 +23,26 @@ module.exports = {
         "@constants": path.resolve(__dirname, "src/constants"),
       },
     },
+    plugins: [
+      new PurgecssPlugin({
+        paths: glob.sync([
+          path.join(__dirname, "src/index.html"),
+          path.join(__dirname, "src/**/*.vue"),
+          path.join(__dirname, "src/**/*.js"),
+        ]),
+        safelist: [
+          /-(leave|enter|appear)(|-(to|from|active))$/,
+          /^(?!(|.*?:)cursor-move).+-move$/,
+          /^router-link(|-exact)-active$/,
+          /data-v-.*/,
+        ],
+        extractors: [
+          {
+            extractor: (content) => content.match(/[A-z0-9-_:\/]+/g) || [],
+            extensions: ["html", "vue", "js"],
+          },
+        ],
+      }),
+    ],
   },
 };
