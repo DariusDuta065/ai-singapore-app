@@ -1,24 +1,33 @@
-# singapore-ai
+# AI Singapore - Project website
 
-## Project setup
+
+## Development
 ```
 yarn install
 ```
-
-### Compiles and hot-reloads for development
+### Start development server
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
+### Lint and fix files
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+---
+## Production
+### Compile and minify for production
+```
+yarn build
+```
+### Serve production build locally
+```
+yarn serve-express
+```
+### Deploy to *static* S3 bucket
+```
+yarn deploy-to-s3
+```
+### Invalidate CloudFront cache
+```
+yarn invalidate-cloudfront
+```
