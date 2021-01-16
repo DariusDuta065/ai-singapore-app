@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 order-1 order-md-1 imageContainer">
           <div class="mt-1 mb-1 my-0-md">
-            <res-img
+            <image-item
               image="creatives-background-pattern"
               :width="294"
               :height="200"
@@ -44,14 +44,14 @@
 
 <script>
 import ActionButton from "@c/Header/ActionButton.vue";
-import ResImg from "@c/Common/ResImg.vue";
+import ImageItem from "@c/Common/ImageItem.vue";
 
 import Links from "@constants/Links.js";
 
 export default {
   components: {
     ActionButton,
-    ResImg,
+    ImageItem,
   },
   name: "LookingFor",
   data: function () {

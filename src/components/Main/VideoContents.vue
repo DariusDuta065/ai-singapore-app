@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 order-1 order-md-1 imageContainer">
           <div class="mt-1 mb-1 my-0-md">
-            <res-img image="creative-equipment" :width="287" :height="200" />
+            <image-item image="creative-equipment" :width="287" :height="200" />
           </div>
         </div>
         <div class="col-xs-12 col-md-6 order-2 order-md-2">
@@ -32,14 +32,14 @@
 
 <script>
 import ActionButton from "@c/Header/ActionButton.vue";
-import ResImg from "@c/Common/ResImg.vue";
+import ImageItem from "@c/Common/ImageItem.vue";
 
 import Links from "@constants/Links.js";
 
 export default {
   components: {
     ActionButton,
-    ResImg,
+    ImageItem,
   },
   name: "VideoContents",
   data: function () {
