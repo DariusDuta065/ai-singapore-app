@@ -1,7 +1,10 @@
-import { createApp } from 'vue'
+import { createApp } from "vue";
+import VueObserveVisibility from "vue3-observe-visibility";
 
-// import 'bootstrap';
-import './assets/scss/app.scss';
+import App from "./App.vue";
+import "./assets/scss/app.scss";
 
-import App from './App.vue'
-createApp(App).mount('#app')
+createApp(App)
+  .use(VueObserveVisibility)
+  // .directive("observe-visibility", ObserveVisibility)
+  .mount("#app");

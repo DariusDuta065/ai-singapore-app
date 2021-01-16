@@ -1,32 +1,40 @@
 <template>
-  <div class="bg-white holder">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-6 order-1 order-md-1 imageContainer">
-          <div class="mt-1 mb-1 my-0-md">
-            <res-img image="creative-equipment" :width="287" :height="200" />
+  <div
+    class="bg-white holder"
+    v-observe-visibility="{
+      callback: visibilityChanged,
+      once: true,
+    }"
+  >
+    <transition name="fade">
+      <div class="container" v-if="isVisible">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 order-1 order-md-1 imageContainer">
+            <div class="mt-1 mb-1 my-0-md">
+              <res-img image="creative-equipment" :width="287" :height="200" />
+            </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-6 order-2 order-md-2">
-          <h2>What is the content of the videos?</h2>
-          <p>
-            You are required to film 5 videos, at a minimum of 45 seconds long
-            per video.
-          </p>
-          <p>
-            Within the videos you are required to be speaking about a topic.
-            There is a list of questions/topics provided that you can choose
-            from or you can create your own.
-          </p>
-          <div class="d-flex flex-row-reverse">
-            <action-button
-              label="Questions &amp; Topics"
-              :url="`${publicPath}${Links.QUESTIONS_TOPICS}`"
-            />
+          <div class="col-xs-12 col-md-6 order-2 order-md-2">
+            <h2>What is the content of the videos?</h2>
+            <p>
+              You are required to film 5 videos, at a minimum of 45 seconds long
+              per video.
+            </p>
+            <p>
+              Within the videos you are required to be speaking about a topic.
+              There is a list of questions/topics provided that you can choose
+              from or you can create your own.
+            </p>
+            <div class="d-flex flex-row-reverse">
+              <action-button
+                label="Questions &amp; Topics"
+                :url="`${publicPath}${Links.QUESTIONS_TOPICS}`"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -46,7 +54,19 @@ export default {
     return {
       Links,
       publicPath: process.env.BASE_URL,
+      isVisible: false,
+      loaded: false,
     };
+  },
+  methods: {
+    visibilityChanged(isVisible) {
+      if (this.loaded) return;
+
+      this.isVisible = isVisible;
+      if (isVisible) {
+        this.loaded = true;
+      }
+    },
   },
 };
 </script>
@@ -59,5 +79,15 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
