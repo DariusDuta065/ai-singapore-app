@@ -35,10 +35,17 @@ module.exports = {
           /^(?!(|.*?:)cursor-move).+-move$/,
           /^router-link(|-exact)-active$/,
           /data-v-.*/,
+          /body*/,
         ],
         extractors: [
           {
-            extractor: (content) => content.match(/[A-z0-9-_:/]+/g) || [],
+            extractor: (content) => {
+              return (
+                content
+                  .replace(/<style[^]+?<\/style>/gi, "")
+                  .match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
+              );
+            },
             extensions: ["html", "vue", "js"],
           },
         ],
