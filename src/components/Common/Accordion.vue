@@ -5,7 +5,7 @@
         <div class="accordion-header-title">
           {{ title }}
         </div>
-        <div class="accordion-header-caret ms-auto">
+        <div class="accordion-header-caret ms-auto ps-2">
           <img
             v-if="isOpen"
             :src="caretUpIcon"

@@ -87,6 +87,14 @@ export default {
             here</a>.</p>
           `,
         },
+        {
+          title: `What language needs to be spoken in the videos?`,
+          answer: `
+            <p><b>You must speak in English</b></p>
+            <p>Please <a href="https://twine.net/signup" target="_blank" rel="noopener noreferrer">sign up 
+            here</a>.</p>
+          `,
+        },
       ],
     };
   },

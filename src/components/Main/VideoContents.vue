@@ -18,6 +18,7 @@
             There is a list of questions/topics provided that you can choose
             from or you can create your own.
           </p>
+          <p><b>You must speak English within all videos</b></p>
           <div class="d-flex flex-row-reverse">
             <action-button
               label="Questions &amp; Topics"
